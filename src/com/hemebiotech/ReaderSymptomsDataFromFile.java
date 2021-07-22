@@ -8,17 +8,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ Read a list of data  from a file , 
+ count the number of words and write them in the file
+ */
 public class ReaderSymptomsDataFromFile implements ISymptomReader {
 	private BufferedReader br;
+	String fileInputName = "C:\\Users\\Gonan\\eclipse-workspace\\OpenclassRoom_Project02\\src\\com\\hemebiotech\\symptomes.txt";
 	private ArrayList<String> symptomesList = new ArrayList<String>();
-	private String fileInputName = "C:\\Users\\Gonan\\eclipse-workspace\\OpenclassRoom_Project02\\src\\com\\hemebiotech\\symptomes.txt";
+//	private String fileInputName = inputFile;
 
 	public ReaderSymptomsDataFromFile() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public ReaderSymptomsDataFromFile(String fileInputName) {
-		super();
 		this.fileInputName = fileInputName;
 	}
 
