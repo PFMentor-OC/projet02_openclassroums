@@ -12,5 +12,8 @@ public class AnalyticsCounter {
 
 		NumberOfOccurrences countSymptomes = new NumberOfOccurrences();
 		Map<String, Integer> getNumberOfOccurrences = countSymptomes.getNumberOfOccurrences(namesOfSymptomes);
+		
+		WriteSymptoms writeSymptoms = new WriteSymptoms();
+		writeSymptoms.writeSymptomsInAFile(getNumberOfOccurrences);		
 	}
 }
