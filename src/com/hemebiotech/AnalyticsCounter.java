@@ -14,6 +14,8 @@ import java.util.Map;
 
 public class AnalyticsCounter {
 	public static void main(String[] args) {
+		// dans args le PATH qui contiendra le fichier symptomes.txt
+		// Nous utilisons le même PATH pour déposer result.out
 		final String inputFile = "C:\\Users\\Gonan\\eclipse-workspace\\OpenclassRoom_Project02\\src\\com\\hemebiotech\\symptomes.txt";
 		final String outputName = "C:\\Users\\Gonan\\eclipse-workspace\\OpenclassRoom_Project02\\src\\com\\hemebiotech\\result.out";
 		
