@@ -20,7 +20,7 @@ public class AnalyticsCounter {
 		if (args.length == 1) {
 			path = args[0];
 		} else {
-			path = "";
+			path = ".";
 		}
 		final String inputFile = path + "/symptomes.txt";
 		final String outputName = path + "/result.out";
