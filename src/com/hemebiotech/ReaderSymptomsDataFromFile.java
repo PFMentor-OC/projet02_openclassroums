@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.nio.file.Paths;
 /*
  Read a list of data  from a file , 
  count the number of words and write them in the file
@@ -44,7 +44,7 @@ public class ReaderSymptomsDataFromFile implements ISymptomReader {
 
 			}
 			System.out.println("*************************************************");
-			System.out.printf("Le fichier %s contient %d lignes \n", fileInputName.substring(77), compteur);
+			System.out.printf("Le fichier %s contient %d lignes \n", Paths.get(fileInputName).getFileName(), compteur);
 			System.out.println("*************************************************");
 
 		} catch (FileNotFoundException e) {
